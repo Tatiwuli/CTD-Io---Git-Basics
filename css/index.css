@@ -1,0 +1,44 @@
+/* Apply the Ubuntu font to h1 and h2 elements */
+h1 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+
+p,
+li {
+  font-family: Helvetica, sans-serif;
+}
+
+a {
+  font-family: Helvetica, sans-serif;
+  font-size: smaller;
+  font-style: italic;
+}
+
+section {
+  padding: 3px;
+  margin-bottom: 10px;
+  margin_top: 10px;
+}
+
+#About {
+  background-color: #d2eff9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#Experiences {
+  background-color: #d2eff9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#Connect {
+  background-color: #d2eff9;
+  padding: 20px;
+  border-radius: 10px;
+}
