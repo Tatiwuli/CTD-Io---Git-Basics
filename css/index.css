@@ -1,11 +1,14 @@
-/* Apply the Ubuntu font to h1 and h2 elements */
+body {
+  background-color: white;
+}
 h1 {
   font-family: "Ubuntu", sans-serif;
 }
 
 h2 {
   font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
+  border-bottom: plum solid 5px;
+  font-weight: 600;
 }
 
 p,
@@ -22,23 +25,80 @@ a {
 section {
   padding: 3px;
   margin-bottom: 10px;
-  margin_top: 10px;
+  margin-top: 10px;
 }
 
-#About {
-  background-color: #d2eff9;
-  padding: 20px;
-  border-radius: 10px;
+nav {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0px 4px 2px -2px gray;
 }
 
-#Experiences {
-  background-color: #d2eff9;
-  padding: 20px;
-  border-radius: 10px;
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
-#Connect {
-  background-color: #d2eff9;
-  padding: 20px;
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-container {
+  background-color: #d1fdff;
   border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.job {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  border-bottom: 2px solid rgb(152, 181, 193);
+}
+
+.job-title {
+  flex: 1;
+}
+
+.job-period {
+  flex: 0 0 150px;
+  text-align: right;
+}
+
+.job-description {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.social-links a {
+  display: inline-block;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
 }
