@@ -6,7 +6,6 @@
     <meta name="keywords" content="personal development, blog" />
     <meta name="author" content="Tatiane Wu Li" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- looks good on all devices -->
     <link rel="stylesheet" href="css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,13 +14,21 @@
       rel="stylesheet"
     />
   </head>
-  <body style="background-color: rgb(245, 251, 255)">
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Experiences">Experiences</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Connect">Connect</a></li>
+      </ul>
+    </nav>
     <img src="./images/greeting_high.png" height="100px" width="100px" />
 
     <h1 style="color: rgb(246, 114, 114)">Tatiane Wu Li</h1>
 
     <section id="About">
-      <!--Always put an id for sections elements for future reference -->
       <h2>About</h2>
       <p>
         Hi! I am originally from Brazil and Taiwan. Currently, I am a data
@@ -33,25 +40,159 @@
 
     <section id="Experiences">
       <h2>Experiences</h2>
-      <ul>
-        <li>Data Analyst in <em>StarBem</em></li>
-        <li>A smartwatch caffeine tracker at <em>CalHacks</em></li>
-        <li>
-          A educational platform that guide professors to implement innovative
-          teaching at <em>FGC</em>
-        </li>
-        <li>
-          Programmed a robot to compete in
-          <em>First Robotics Competition (FRC)</em>
-        </li>
-      </ul>
+      <div class="experience">
+        <div class="job-container">
+          <div class="job">
+            <div class="job-title">
+              <p>Data Analyst in <em>StarBem</em></p>
+            </div>
+            <div class="job-period">
+              <p>Ongoing</p>
+            </div>
+          </div>
+          <div class="job-description">
+            <ul>
+              <li>
+                Reduced appointment cancellations by x% cleaning and processing
+                30K rows dataset into a Grafana dashboard, identifying specific
+                companies with high cancellation rates, sources, and reasons for
+                the cancellations, and suggesting changes for current remedies.
+              </li>
+              <li>
+                Decreased the finance team’s workload by 23 hours per week by
+                writing Python scripts to automate data cleaning and invoice
+                generation.
+              </li>
+              <li>
+                Saved R$ XX,XX in marketing by analyzing KPIs to identify
+                customer personas and critical stages in the conversion funnel,
+                building PowerBI dashboards to support the sales and marketing
+                team in strategy adjustments.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="job-container">
+          <div class="job">
+            <div class="job-title">
+              <p>A smartwatch caffeine tracker at <em>CalHacks</em></p>
+            </div>
+            <div class="job-period">
+              <p>Oct/2023</p>
+            </div>
+          </div>
+          <div class="job-description">
+            <ul>
+              <li>
+                Led a team of 3 to secure third place in Hackathon for Health by
+                managing the Research and Development of a Caffeine Intake
+                Advisor app.
+              </li>
+              <li>
+                Convinced 6 judges from Zepp Health about the market trends for
+                the app and its scientific credibility by developing the UI/UX
+                and demonstrating the prototype.
+              </li>
+              <li>
+                Assisted in integrating Amazfit’s software and hardware by
+                defining user biological dataset requirements, evaluation
+                metrics, and collection methods.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="job-container">
+          <div class="job">
+            <div class="job-title">
+              <p>
+                Programmed a robot to compete in
+                <em>First Robotics Competition (FRC)</em>
+              </p>
+            </div>
+            <div class="job-period">
+              <p>Jan-Mar/2022</p>
+            </div>
+          </div>
+          <div class="job-description">
+            <ul>
+              <li>
+                Coded a robot ( with WPILIB) to handle ball acquisition,
+                transportation, and shooting by self-learning Java in 1.5 months
+                and directed robot path planning with a mechanical team of 4
+                people.
+              </li>
+              <li>
+                Won Innovation in Control prize against 47 teams (~141 coders)
+                and presented the coding system to 6 SWEs and 4 Product Managers
+                from companies like Boeing and Ford.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="job-container">
+          <div class="job">
+            <div class="job-title">
+              <p>
+                A educational platform that guide professors to implement
+                innovative teaching at <em>FGC</em>
+              </p>
+            </div>
+            <div class="job-period">
+              <p>Jun-Sep/2021</p>
+            </div>
+          </div>
+          <div class="job-description">
+            <ul>
+              <li>
+                Led the achievement of first place in the Education competition
+                by managing tasks and communication of a 17-member binational
+                team and an Innovative Education platform’s development roadmap.
+              </li>
+              <li>
+                Increased student comprehension by 75% and engagement by 33%
+                (quantitative metrics measured and analyzed with Google Forms
+                and Excel) by conducting user research and implementing 2 rounds
+                of usability testing and concept testing of a prototype.
+              </li>
+              <li>
+                Coordinated problem research (market analysis, user interviews,
+                and literature review) and ideation and reported the process in
+                Engineering Notebook for award evaluation.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Skills">
+      <h2>Skills</h2>
+    </section>
+
+    <section id="Projects">
+      <h2>Projects</h2>
     </section>
 
     <section id="Connect">
       <h2>Connect</h2>
-      <a href="https://www.linkedin.com/in/tatiane-wu-li-932a6a280/">
-        My Linkedin Profile</a
-      >
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/tatiane-wu-li-932a6a280/">
+          <img
+            src="images/linkedin-icon.png"
+            alt="LinkedIn"
+            width="30px"
+            height="30px"
+          />
+        </a>
+        <a href="https://github.com/Tatiwuli">
+          <img
+            src="images/github-icon.png"
+            alt="GitHub"
+            width="30px"
+            height="30px"
+          />
+        </a>
+      </div>
     </section>
   </body>
 </html>
