@@ -1,6 +1,8 @@
+/* Base styles for mobile-first design */
 body {
   background-color: white;
 }
+
 h1 {
   font-family: "Ubuntu", sans-serif;
 }
@@ -53,13 +55,14 @@ nav ul li a {
   color: black;
 }
 
+/* Experience section styles */
 .experience {
   display: flex;
   flex-direction: column;
 }
 
 .job-container {
-  background-color: #d1fdff;
+  background-color: #e9f7f8;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
@@ -101,4 +104,73 @@ nav ul li a {
 .social-links img {
   width: 30px;
   height: 30px;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+  /* Adjust h1 and h2 font size and color */
+  h1 {
+    font-size: 2.5rem;
+    color: #ff5101;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    color: #0944a1;
+  }
+
+  /* Adjust padding and margin for sections */
+  section {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  /* Adjust nav bar padding and text color */
+  nav {
+    padding: 15px;
+  }
+
+  nav ul li a {
+    color: #0944a1;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  /* Adjust h1 and h2 font size and color */
+  h1 {
+    font-size: 3rem;
+    color: #0944a1;
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: #ff5101;
+  }
+
+  /* Adjust padding and margin for sections */
+  section {
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+
+  /* Adjust nav bar padding and text color */
+  nav {
+    padding: 20px;
+  }
+
+  nav ul li a {
+    color: #ff5101;
+  }
+
+  /* Convert Experience section to grid layout */
+  .experience {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .job-container {
+    padding: 30px;
+  }
 }
