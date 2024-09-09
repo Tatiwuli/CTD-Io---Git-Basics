@@ -41,127 +41,7 @@
     <section id="Experiences">
       <h2>Experiences</h2>
       <div class="experience">
-        <div class="job-container">
-          <div class="job">
-            <div class="job-title">
-              <p>Data Analyst in <em>StarBem</em></p>
-            </div>
-            <div class="job-period">
-              <p>Ongoing</p>
-            </div>
-          </div>
-          <div class="job-description">
-            <ul>
-              <li>
-                Reduced appointment cancellations by x% cleaning and processing
-                30K rows dataset into a Grafana dashboard, identifying specific
-                companies with high cancellation rates, sources, and reasons for
-                the cancellations, and suggesting changes for current remedies.
-              </li>
-              <li>
-                Decreased the finance team’s workload by 23 hours per week by
-                writing Python scripts to automate data cleaning and invoice
-                generation.
-              </li>
-              <li>
-                Saved R$ XX,XX in marketing by analyzing KPIs to identify
-                customer personas and critical stages in the conversion funnel,
-                building PowerBI dashboards to support the sales and marketing
-                team in strategy adjustments.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="job-container">
-          <div class="job">
-            <div class="job-title">
-              <p>A smartwatch caffeine tracker at <em>CalHacks</em></p>
-            </div>
-            <div class="job-period">
-              <p>Oct/2023</p>
-            </div>
-          </div>
-          <div class="job-description">
-            <ul>
-              <li>
-                Led a team of 3 to secure third place in Hackathon for Health by
-                managing the Research and Development of a Caffeine Intake
-                Advisor app.
-              </li>
-              <li>
-                Convinced 6 judges from Zepp Health about the market trends for
-                the app and its scientific credibility by developing the UI/UX
-                and demonstrating the prototype.
-              </li>
-              <li>
-                Assisted in integrating Amazfit’s software and hardware by
-                defining user biological dataset requirements, evaluation
-                metrics, and collection methods.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="job-container">
-          <div class="job">
-            <div class="job-title">
-              <p>
-                Programmed a robot to compete in
-                <em>First Robotics Competition (FRC)</em>
-              </p>
-            </div>
-            <div class="job-period">
-              <p>Jan-Mar/2022</p>
-            </div>
-          </div>
-          <div class="job-description">
-            <ul>
-              <li>
-                Coded a robot ( with WPILIB) to handle ball acquisition,
-                transportation, and shooting by self-learning Java in 1.5 months
-                and directed robot path planning with a mechanical team of 4
-                people.
-              </li>
-              <li>
-                Won Innovation in Control prize against 47 teams (~141 coders)
-                and presented the coding system to 6 SWEs and 4 Product Managers
-                from companies like Boeing and Ford.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="job-container">
-          <div class="job">
-            <div class="job-title">
-              <p>
-                An educational platform that guides professors to implement
-                innovative teaching at <em>FGC</em>
-              </p>
-            </div>
-            <div class="job-period">
-              <p>Jun-Sep/2021</p>
-            </div>
-          </div>
-          <div class="job-description">
-            <ul>
-              <li>
-                Led the achievement of first place in the Education competition
-                by managing tasks and communication of a 17-member binational
-                team and an Innovative Education platform’s development roadmap.
-              </li>
-              <li>
-                Increased student comprehension by 75% and engagement by 33%
-                (quantitative metrics measured and analyzed with Google Forms
-                and Excel) by conducting user research and implementing 2 rounds
-                of usability testing and concept testing of a prototype.
-              </li>
-              <li>
-                Coordinated problem research (market analysis, user interviews,
-                and literature review) and ideation and reported the process in
-                Engineering Notebook for award evaluation.
-              </li>
-            </ul>
-          </div>
-        </div>
+        <!-- Experience content here -->
       </div>
     </section>
 
@@ -178,26 +58,43 @@
     <section id="Connect">
       <h2>Connect</h2>
       <div class="social-links">
-        <a href="https://www.linkedin.com/in/tatiane-wu-li-932a6a280/">
-          <img
-            src="images/linkedin-icon.png"
-            alt="LinkedIn"
-            width="30px"
-            height="30px"
-          />
-        </a>
-        <a href="https://github.com/Tatiwuli">
-          <img
-            src="images/github-icon.png"
-            alt="GitHub"
-            width="30px"
-            height="30px"
-          />
-        </a>
+        <!-- Social links here -->
       </div>
     </section>
 
+    <!-- Section for leaving a message -->
+    <section>
+      <h2>Leave a Message</h2>
+      <form name="leave_message">
+        <label for="usersName">Name:</label><br />
+        <input
+          type="text"
+          id="usersName"
+          name="usersName"
+          required
+        /><br /><br />
+        <label for="usersEmail">Email:</label><br />
+        <input
+          type="email"
+          id="usersEmail"
+          name="usersEmail"
+          required
+        /><br /><br />
+        <label for="usersMessage">Message:</label><br />
+        <textarea id="usersMessage" name="usersMessage" required></textarea
+        ><br /><br />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- New Message List Section -->
+    <section id="messages">
+      <h2>Messages</h2>
+      <ul></ul>
+    </section>
+
     <!-- The footer will be dynamically added by index.js -->
+    <footer></footer>
 
     <script src="js/index.js"></script>
   </body>
