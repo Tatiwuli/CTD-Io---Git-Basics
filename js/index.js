@@ -36,10 +36,6 @@ messageForm.addEventListener("submit", function (event) {
   const userEmail = event.target.usersEmail.value
   const userMessage = event.target.usersMessage.value
 
-  console.log("Name:", userName)
-  console.log("Email:", userEmail)
-  console.log("Message:", userMessage)
-
   const messageSection = document.getElementById("messages")
   const messageList = messageSection.querySelector("ul")
 
@@ -62,4 +58,40 @@ messageForm.addEventListener("submit", function (event) {
   messageList.appendChild(newMessage)
 
   event.target.reset()
+})
+
+// Ensure DOM is fully loaded before running this code
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("https://api.github.com/users/Tatiwuli/repos")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok")
+      }
+      return response.json()
+    })
+    .then((repositories) => {
+      const projectSection = document.getElementById("projects")
+      const projectList = projectSection.querySelector("ul")
+
+      if (repositories.length === 0) {
+        const emptyMessage = document.createElement("p")
+        emptyMessage.innerText = "No repositories found."
+        projectSection.appendChild(emptyMessage)
+        return
+      }
+
+      for (let i = 0; i < repositories.length; i++) {
+        const repo = repositories[i]
+        const project = document.createElement("li")
+        project.innerText = repo.name
+        projectList.appendChild(project)
+      }
+    })
+    .catch((error) => {
+      const projectSection = document.getElementById("projects")
+      const errorMessage = document.createElement("p")
+      errorMessage.innerText =
+        "Error fetching repositories. Please try again later."
+      projectSection.appendChild(errorMessage)
+    })
 })
